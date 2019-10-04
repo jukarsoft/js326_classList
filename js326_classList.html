@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#capa {
+			background-color:blue; 
+			width:200px; 
+			height:50px; 
+			text-align:center;
+		}
+
+		.color {
+			background-color: yellow;
+			width: 400px;
+			border: 10px solid grey;
+			text-align:center;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		function	cambiaColor() {
+			var caja = document.getElementById('capa')
+			//creando una clase
+			caja.classList.toggle('color')
+			//modificando cada style por separado
+			//caja.style.backgroundColor= 'yellow';
+			//caja.style.width='400px';
+			//caja.style.border='10px solid grey';
+		}
+	</script>
+</head>
+<body>
+	<div id="capa">
+		<input type="button" value="Apreta aquí" onclick="cambiaColor()" />
+	</div>
+</body>
+</html>
